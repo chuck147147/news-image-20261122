@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1024px; height: 1024px; font-family: "Noto Sans", "DejaVu Sans", sans-serif; background: #f7f3ea; color: #1a1a1a; overflow: hidden; }
+  .masthead { background: #14213d; color: #fff; padding: 20px 40px 14px; display: flex; justify-content: space-between; align-items: flex-end; }
+  .masthead .brand { font-size: 27px; letter-spacing: 4px; font-weight: 700; color: #fca311; }
+  .masthead .date { font-size: 40px; font-weight: 800; line-height: 1.05; text-align: right; }
+  .masthead .date small { display: block; font-size: 21px; font-weight: 600; color: #cdd6e4; letter-spacing: 2px; }
+  .lead { display: flex; background: #fff; border-bottom: 5px solid #14213d; }
+  .lead .art { width: 340px; background: linear-gradient(160deg, #0b3954 0%, #126782 55%, #d64541 130%); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 18px 0 10px; }
+  .lead .art .temp { color: #fff; font-size: 30px; font-weight: 800; margin-top: 6px; letter-spacing: 1px; }
+  .lead .art .cap { color: #ffe9a8; font-size: 16px; margin-top: 2px; }
+  .lead .txt { flex: 1; padding: 16px 28px 12px 26px; }
+  .kicker { color: #b3001b; font-weight: 800; font-size: 17px; letter-spacing: 2.5px; }
+  .lead h1 { font-size: 36px; line-height: 1.12; font-weight: 800; margin: 7px 0 9px; }
+  .lead p { font-size: 18px; line-height: 1.38; color: #333; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .story { padding: 10px 24px 7px; border-bottom: 2px solid #ddd3bd; min-height: 126px; }
+  .story:nth-child(odd) { border-right: 2px solid #ddd3bd; }
+  .story .tag { display: inline-block; font-size: 14.5px; font-weight: 800; letter-spacing: 1.6px; color: #fff; padding: 2.5px 9px; border-radius: 3px; margin-bottom: 7px; }
+  .story h2 { font-size: 22px; line-height: 1.2; font-weight: 800; margin-bottom: 5px; }
+  .story p { font-size: 15.5px; line-height: 1.34; color: #444; }
+  .t-war { background: #8d0801; } .t-law { background: #5f0f40; } .t-mideast { background: #9a3412; }
+  .t-money { background: #166534; } .t-space { background: #1e3a8a; } .t-sci { background: #6d28d9; }
+  footer { display: flex; justify-content: space-between; padding: 9px 40px; font-size: 15.5px; color: #6b6250; }
+</style>
+</head>
+<body>
+  <div class="masthead">
+    <div class="brand">THE WORLD IN ONE PAGE</div>
+    <div class="date">22 NOVEMBER 2026<small>SUNDAY · WORLD NEWS SUMMARY</small></div>
+  </div>
+
+  <div class="lead">
+    <div class="art">
+      <svg width="215" height="150" viewBox="0 0 215 150">
+        <circle cx="92" cy="75" r="56" fill="#7fb069" stroke="#eaf6ff" stroke-width="4"/>
+        <path d="M52 55 q14 -12 30 -4 q-6 12 -22 14 q-10 1 -8 -10z" fill="#2d6a4f"/>
+        <path d="M96 112 q20 8 34 -4 q4 14 -12 20 q-20 6 -22 -16z" fill="#2d6a4f"/>
+        <path d="M118 38 q16 -4 22 8 q-12 8 -24 2 q-6 -6 2 -10z" fill="#2d6a4f"/>
+        <rect x="168" y="18" width="17" height="86" rx="8.5" fill="#eaf6ff"/>
+        <rect x="171.5" y="52" width="10" height="52" rx="5" fill="#e63946"/>
+        <circle cx="176.5" cy="118" r="16" fill="#e63946" stroke="#eaf6ff" stroke-width="3.5"/>
+      </svg>
+      <div class="temp">+1.5°C AT STAKE</div>
+      <div class="cap">ANTALYA, TÜRKIYE</div>
+    </div>
+    <div class="txt">
+      <div class="kicker">CLIMATE · COP31</div>
+      <h1>Climate talks collapse with no deal on fossil fuels</h1>
+      <p>After two days of overtime, nearly 200 countries left the UN COP31 summit in Antalya without an overarching agreement — split over fossil fuels and climate finance.</p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="story">
+      <span class="tag t-law">WORLD COURT</span>
+      <h2>ICJ rules Myanmar committed genocide against the Rohingya</h2>
+      <p>The International Court of Justice found Myanmar's military campaign against the Rohingya minority amounted to genocide. Rohingya refugees in Bangladesh welcomed the verdict.</p>
+    </div>
+    <div class="story">
+      <span class="tag t-war">WAR AT SEA</span>
+      <h2>Ukrainian sea drones sink Russian warship off Libya</h2>
+      <p>Zelenskyy confirmed Ukraine struck a Russian naval vessel at Benghazi port — the war's reach extending to the Mediterranean.</p>
+    </div>
+    <div class="story">
+      <span class="tag t-mideast">MIDDLE EAST</span>
+      <h2>Two tankers struck near Hormuz; Bahrain reports Iranian attack</h2>
+      <p>Projectiles hit tankers near the Strait of Hormuz, and Bahrain said an Iranian strike damaged an industrial facility and injured two — the blockade standoff deepening.</p>
+    </div>
+    <div class="story">
+      <span class="tag t-mideast">WEST BANK</span>
+      <h2>Settler raids torch cars and homes overnight</h2>
+      <p>Dozens of settlers raided Palestinian villages near Ramallah, burning 12 vehicles and several homes. Israel's opposition leader condemned the attacks as "terrorism".</p>
+    </div>
+    <div class="story">
+      <span class="tag t-money">MARKETS · CHINA</span>
+      <h2>China cuts margin ratio to 80% in push to lift stocks</h2>
+      <p>Shanghai, Shenzhen and Beijing exchanges will lower the minimum margin ratio from 100% to 80% on 30 November, alongside fresh fee cuts to support the market.</p>
+    </div>
+    <div class="story">
+      <span class="tag t-space">SPACE</span>
+      <h2>BepiColombo enters orbit around Mercury after 8 years</h2>
+      <p>The European–Japanese mission's two orbiters finally settled into orbit around Mercury, eight years after launch, to begin mapping the innermost planet.</p>
+    </div>
+  </div>
+
+  <div class="lead" style="border-bottom: none; border-top: 5px solid #14213d;">
+    <div class="txt" style="padding-top: 12px; padding-bottom: 4px;">
+      <div class="kicker" style="color:#6d28d9;">SCIENCE · RIEMANN SAGA</div>
+      <h1 style="font-size: 26px;">Riemann proof challenged: critic says a key definition proves nothing</h1>
+      <p style="font-size: 16.5px;">Days after the Lean community certified the AI-assisted Riemann proof, a critic argues a core predicate is defined as always true. The Lean groups have yet to respond.</p>
+    </div>
+  </div>
+
+  <footer>
+    <span>One day, one page — the stories of Sunday 22 November 2026</span>
+    <span>Sources: Reuters · AP · BBC · Xinhua</span>
+  </footer>
+</body>
+</html>
